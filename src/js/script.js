@@ -1,5 +1,3 @@
-function alert("Bem-vindo ao Site GreenWind Solar!");
-
 function trocar(cor) {
     document.body.style.backgroundColor = cor;
 }
