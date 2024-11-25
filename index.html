@@ -3,76 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Chamando o CSS externo -->
     <link rel="stylesheet" href="./src/css/estilo.css">
     <title>GreenWind Solar - Energia Sustentável e Inteligente</title>
 </head>
 <body>
     <header>
         <div class="titulo">
-            <h1>GreenWind Solar</h1>
+        <h1>GreenWind Solar</h1>
         </div>
-        <nav aria-label="Navegação principal">
+        <nav>
             <ul>
-                <li><a href="index.html">Home</a></li> 
-                <li><a href="sobre.html">Sobre</a></li> 
-                <li><a href="solucao.html">Solução</a></li> 
-                <li><a href="login.html">Login</a></li> 
-                <li><a href="contato.html">Contato</a></li> 
-                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="index.html">Home</a></li> <!-- Adicionando estrutura Home -->
+                <li><a href="sobre.html">Sobre</a></li> <!-- Adicionando estrutura Sobre-->
+                <li><a href="solução.html">Solução</a></li> <!-- Adicionando estrutura Solução -->
+                <li><a href="login.html">Login</a></li> <!-- Adicionando estrutura Login -->
+                <li><a href="contato.html">Contato</a></li> <!-- Adicionando estrutura Contato -->
+                <li><a href="quiz.html">Quiz</a></li> <!-- Adicionando estrutura Quiz -->
+                <div class="mudarCor">  <!-- Estrutura DIV para executar a função de trocar cor do site no JavaScript -->
+                <input type="button" class="cor" onclick="trocar('#0000FF')"> <!-- Troca a cor pra azul -->                    
+                <input type="button" class="cor" onclick="trocar('#FF0000')"> <!-- Troca a cor para Vermelho -->                    
+                <input type="button" class="cor" onclick="trocar('#800080')"> <!-- Troca a cor para Roxo -->                   
+                </div>
             </ul>
-            <div class="mudarCor">
-                <button class="cor" aria-label="Mudar para azul" onclick="trocar('#0000FF')"></button>
-                <button class="cor" aria-label="Mudar para vermelho" onclick="trocar('#FF0000')"></button>
-                <button class="cor" aria-label="Mudar para roxo" onclick="trocar('#800080')"></button>
-            </div>
         </nav>
     </header>
 
     <hr>
 
     <main>
-        <section class="smart_section">
-            <h2>GreenWind Solar<br> Por um futuro mais sustentável!</h2>
-        </section>
-        
+        <div class="smart_section">
+            <h2>GreenWind Solar <br> Por um futuro mais sustentável!</h2>
+        </div>
+    
         <div class="img">
-            <img id="image" src="./src/assets/system_hybrid.jpg" alt="Sistema híbrido solar e eólico">
+            <img id="image" alt="Sistema híbrido">
         </div>
         
-        <section class="subtitulo">
+        <div class="subtitulo">
             <h2>O que é a GreenWind Solar?</h2>
-        </section>
+        </div>
         
-        <section class="conteudo_empresa">
-            <img src="./src/assets/img4_home.jpg" alt="Painéis solares e turbinas eólicas">
-            <p>
+        <div class="conteudo_empresa">
+            <img src="./src/assets/img4_home.jpg"  alt="Futuro Híbrido">
+          
+            <span>
                 A GreenWind Solar é uma solução inovadora que combina sistemas de energia solar e microturbinas eólicas, criando uma abordagem híbrida para geração de energia renovável. 
-                Nossa tecnologia é projetada para aproveitar ao máximo os recursos naturais, garantindo eficiência energética, confiabilidade e sustentabilidade.
-            </p>
-        </section>
+                Nossa tecnologia é projetada para aproveitar ao máximo os recursos naturais, garantindo eficiência energética, confiabilidade e sustentabilidade. 
+                A integração dessas fontes permite que a energia seja gerada mesmo em condições adversas, como dias nublados ou ventos fracos, oferecendo uma alternativa contínua e confiável para residências, empresas e comunidades.
+            </span>
+        </div>
         
-        <section class="subtitulo2">
+        <div class="subtitulo2">
             <h2>Por que adotar a solução GreenWind Solar?</h2>         
-        </section>
-        <section class="porque_mudar">
-            <p>
-                A implementação da GreenWind Solar é essencial para uma transição energética eficiente e sustentável. Nossa abordagem híbrida reduz o impacto ambiental, otimizando o uso de recursos naturais como sol e vento. Além disso, oferecemos monitoramento em tempo real, garantindo confiabilidade mesmo em cenários de alta demanda.
-            </p>
-        </section>        
+        </div>
+        <div class="conteudo_solucao">
+            <span>
+                A implementação da GreenWind Solar é essencial para uma transição energética eficiente e sustentável. 
+                Nossa abordagem híbrida reduz o impacto ambiental, otimizando o uso de recursos naturais como sol e vento. 
+                Além disso, oferecemos monitoramento em tempo real, garantindo confiabilidade mesmo em cenários de alta demanda.
+                Com o avanço das mudanças climáticas, a adoção de sistemas híbridos não é apenas uma escolha estratégica, 
+                mas também uma responsabilidade compartilhada para garantir um futuro energético limpo, seguro e acessível.
+            </span>
+        </div>        
     </main>
-
+    
     <hr>
-
+    
     <footer>
         <div class="sociais">
             <p>Acompanhe nossas redes sociais:</p>
         </div>
         
-        <div class="redes" aria-label="Redes sociais">
+        <div class="redes">
             <img src="src/assets/insta.png" alt="Instagram" onclick="instagram()">
             <img src="src/assets/twitter.png" alt="Twitter" onclick="twitter()">
         </div>
     </footer>
+    
+    <!-- Chamando o JavaScript externo -->
     <script src="./src/js/script.js"></script>
-</body>
-</html>
