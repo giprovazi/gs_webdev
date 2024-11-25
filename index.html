@@ -9,75 +9,70 @@
 <body>
     <header>
         <div class="titulo">
-        <h1>GreenWind Solar</h1>
+            <h1>GreenWind Solar</h1>
         </div>
-        <nav>
+        <nav aria-label="Navegação principal">
             <ul>
                 <li><a href="index.html">Home</a></li> 
                 <li><a href="sobre.html">Sobre</a></li> 
-                <li><a href="solução.html">Solução</a></li> 
+                <li><a href="solucao.html">Solução</a></li> 
                 <li><a href="login.html">Login</a></li> 
                 <li><a href="contato.html">Contato</a></li> 
-                <li><a href="quiz.html">Quiz</a></li> 
-                <div class="mudarCor">
-                <input type="button" class="cor" onclick="trocar('#0000FF')">                    
-                <input type="button" class="cor" onclick="trocar('#FF0000')">               
-                <input type="button" class="cor" onclick="trocar('#800080')">                   
-                </div>
+                <li><a href="quiz.html">Quiz</a></li>
             </ul>
+            <div class="mudarCor">
+                <button class="cor" aria-label="Mudar para azul" onclick="trocar('#0000FF')"></button>
+                <button class="cor" aria-label="Mudar para vermelho" onclick="trocar('#FF0000')"></button>
+                <button class="cor" aria-label="Mudar para roxo" onclick="trocar('#800080')"></button>
+            </div>
         </nav>
     </header>
 
     <hr>
 
     <main>
-        <div class="smart_section">
-            <h2>GreenWind Solar <br> Por um futuro mais sustentável!</h2>
-        </div>
-    
+        <section class="smart_section">
+            <h2>GreenWind Solar<br> Por um futuro mais sustentável!</h2>
+        </section>
+        
         <div class="img">
-            <img id="image" alt="Sistema híbrido">
+            <img id="image" src="./src/assets/system_hybrid.jpg" alt="Sistema híbrido solar e eólico">
         </div>
         
-        <div class="subtitulo">
+        <section class="subtitulo">
             <h2>O que é a GreenWind Solar?</h2>
-        </div>
+        </section>
         
-        <div class="conteudo_empresa">
-            <img src="./src/assets/img4_home.jpg"  alt="Futuro Híbrido">
-          
-            <span>
+        <section class="conteudo_empresa">
+            <img src="./src/assets/img4_home.jpg" alt="Painéis solares e turbinas eólicas">
+            <p>
                 A GreenWind Solar é uma solução inovadora que combina sistemas de energia solar e microturbinas eólicas, criando uma abordagem híbrida para geração de energia renovável. 
-                Nossa tecnologia é projetada para aproveitar ao máximo os recursos naturais, garantindo eficiência energética, confiabilidade e sustentabilidade. 
-                A integração dessas fontes permite que a energia seja gerada mesmo em condições adversas, como dias nublados ou ventos fracos, oferecendo uma alternativa contínua e confiável para residências, empresas e comunidades.
-            </span>
-        </div>
+                Nossa tecnologia é projetada para aproveitar ao máximo os recursos naturais, garantindo eficiência energética, confiabilidade e sustentabilidade.
+            </p>
+        </section>
         
-        <div class="subtitulo2">
+        <section class="subtitulo2">
             <h2>Por que adotar a solução GreenWind Solar?</h2>         
-        </div>
-        <div class="porque_mudar">
-            <span>
-                A implementação da GreenWind Solar é essencial para uma transição energética eficiente e sustentável. 
-                Nossa abordagem híbrida reduz o impacto ambiental, otimizando o uso de recursos naturais como sol e vento. 
-                Além disso, oferecemos monitoramento em tempo real, garantindo confiabilidade mesmo em cenários de alta demanda.
-                Com o avanço das mudanças climáticas, a adoção de sistemas híbridos não é apenas uma escolha estratégica, 
-                mas também uma responsabilidade compartilhada para garantir um futuro energético limpo, seguro e acessível.
-            </span>
-        </div>        
+        </section>
+        <section class="porque_mudar">
+            <p>
+                A implementação da GreenWind Solar é essencial para uma transição energética eficiente e sustentável. Nossa abordagem híbrida reduz o impacto ambiental, otimizando o uso de recursos naturais como sol e vento. Além disso, oferecemos monitoramento em tempo real, garantindo confiabilidade mesmo em cenários de alta demanda.
+            </p>
+        </section>        
     </main>
-    
+
     <hr>
-    
+
     <footer>
         <div class="sociais">
             <p>Acompanhe nossas redes sociais:</p>
         </div>
         
-        <div class="redes">
+        <div class="redes" aria-label="Redes sociais">
             <img src="src/assets/insta.png" alt="Instagram" onclick="instagram()">
             <img src="src/assets/twitter.png" alt="Twitter" onclick="twitter()">
         </div>
     </footer>
-    
     <script src="./src/js/script.js"></script>
+</body>
+</html>
