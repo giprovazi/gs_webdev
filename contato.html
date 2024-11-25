@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Chamando o CSS externo -->
+    <link rel="stylesheet" href="./src/css/contato.css">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <img class="imagem" width="80px" src="./src/assets/img4_home.jpg" alt="">
+        <div class="titulo">
+        <h1>Sistema Híbrido</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Adicionando estrutura do Home -->
+                <li><a href="sobre.html">Sobre</a></li> <!-- Adicionando estrutura do Sobre-->
+                <li><a href="solucaoo.html">Solução</a></li> <!-- Adicionando estrutura da Solução -->
+                <li><a href="login.html">Login</a></li> <!-- Adicionando estrutura de Login -->
+                <li><a href="contato.html">Contato</a></li> <!-- Adicionando estrutura do Contato -->
+                <li><a href="quiz.html">Quiz</a></li> <!-- Adicionando estrutura do Quiz -->
+                <div class="mudarCor">  <!-- Estrutura DIV para executar a função de trocar cor do site no JavaScript -->
+                     <input type="button" class="cor" onclick="trocar('#98FB98')"> <!-- Troca a cor -->                    
+                    <input type="button" class="cor" onclick="trocar('#8FBC8F')"> <!-- Troca a cor  -->                    
+                    <input type="button" class="cor" onclick="trocar('#90EE90')"> <!-- Troca a cor -->                  
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <h1 class="title">
+            Informações de Contato
+        </h1>
+        <h2>
+            Contate-nos das 9 ás 20 de segunda a sábado nas seguintes plataformas:  
+        </h2>
+
+        <div class="slide">
+            <div class="pagina" onclick="telefone()"><img src="./src/assets/phone.png" alt="">Telefone</div>
+            <div class="pagina" onclick="email()"><img src="./src/assets/gmail.png" alt="">Email</div>
+            <div class="pagina" onclick="wpp()"><img src="./src/assets/wpp.png" alt="">Whatsapp</div>
+            <div class="pagina" onclick="insta()"><img src="./src/assets/insta.png" alt="">instagram</div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="sociais">
+            <p>Acompanhe nossas redes sociais:</p>
+        </div>
+        
+        <div class="redes">
+            <img src="src/assets/insta.png" alt="Instagram" onclick="instagram()">
+            <img src="src/assets/twitter.png" alt="Twitter" onclick="twitter()">
+        </div>
+    </footer>
+
+
+    <!-- Chamando o JavaScript externo -->
+     <script src="./src/js/script.js"></script>
+</body>
+</html>
