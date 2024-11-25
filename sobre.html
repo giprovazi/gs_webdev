@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Chamando o CSS externo -->
+    <link rel="stylesheet" href="./src/css/sobre.css">
+    <title>Sobre</title>
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h1>GreenWind Solar</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Adicionando estrutura Home -->
+                <li><a href="sobre.html">Sobre</a></li> <!-- Adicionando estrutura Sobre-->
+                <li><a href="solução.html">Solução</a></li> <!-- Adicionando estrutura Solução -->
+                <li><a href="login.html">Login</a></li> <!-- Adicionando estrutura Login -->
+                <li><a href="contato.html">Contato</a></li> <!-- Adicionando estrutura Contato -->
+                <li><a href="quiz.html">Quiz</a></li> <!-- Adicionando estrutura Quiz -->
+                <div class="mudarCor">  <!-- Estrutura DIV para executar a função de trocar cor do site no JavaScript -->
+                <input type="button" class="cor" onclick="trocar('#0000FF')"> <!-- Troca a cor pra azul -->                    
+                <input type="button" class="cor" onclick="trocar('#FF0000')"> <!-- Troca a cor para Vermelho -->                    
+                <input type="button" class="cor" onclick="trocar('#800080')"> <!-- Troca a cor para Roxo -->                   
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+    <main>
+        <h1>Sobre Nós</h1>
+        <section>
+            <li class="texto">
+                A GreenWind é uma empresa inovadora dedicada a transformar o futuro da energia por meio de soluções sustentáveis e acessíveis.
+                Especialistas em geração de energia híbrida solar e eólica, oferecemos sistemas integrados e eficientes que unem tecnologia avançada e respeito ao meio ambiente.
+                Nosso objetivo é contribuir para um planeta mais limpo, reduzindo a dependência de combustíveis fósseis e promovendo a transição energética global.
+            </li>
+        </section>
+        <section>
+            <h1>Nossa Visão</h1>
+            <li class="texto">          
+                Ser referência global em energia sustentável, liderando a transição para um mundo movido por fontes renováveis. 
+                Buscamos um futuro em que comunidades e empresas prosperem com energia limpa, acessível e abundante, garantindo equilíbrio entre inovação, progresso e preservação ambiental.
+
+            </li>
+        </section>
+        <section>
+            <h1>Nossos Valores</h1>
+            <li>Sustentabilidade: Compromisso com práticas que protegem o meio ambiente e promovem o uso responsável dos recursos naturais.</li>
+            <li>Inovação: Desenvolvemos soluções pioneiras para atender às demandas energéticas do futuro.</li>
+            <li>Colaboração: Trabalhamos lado a lado com nossos clientes, parceiros e comunidades.</li>
+            <li>Excelência: Busca incessante pela qualidade em todos os aspectos do nosso trabalho.</li>
+        </section>
+        <section>
+            <h1>Nossas Soluções</h1>
+            <li>Sistemas de geração híbrida solar e eólica: Projetos personalizados para atender às necessidades de residências, empresas e indústrias.</li>
+            <li>Armazenamento inteligente de energia: Soluções de baterias para garantir fornecimento contínuo e confiável.</li>
+            <li>Monitoramento e manutenção: Tecnologia de ponta para gestão em tempo real e suporte técnico especializado.</li>
+        </section>
+        <section>
+            <h1>Entre em Contato</h1>
+            <li>
+                Estamos sempre à procura de novas parcerias e oportunidades para expandir nosso impacto. 
+                Se você compartilha nossa visão e deseja saber mais sobre como podemos colaborar, entre em contato conosco!
+            </li>
+            <a href="./contato.html">Contate-nos</a>
+        </section>
+        <section>
+            <h1>Green Wind - Tornando o mundo um lugar mais sustentável.</h1>
+        </section>
+       
+    </main>
+
+    <hr>
+    
+    <footer>
+        <div class="sociais">
+            <p>Acompanhe nossas redes sociais:</p>
+        </div>
+        
+        <div class="redes">
+            <img src="src/assets/insta.png" alt="Instagram" onclick="instagram()">
+            <img src="src/assets/twitter.png" alt="Twitter" onclick="twitter()">
+        </div>
+    </footer>
+
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
