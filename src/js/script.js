@@ -38,11 +38,11 @@ const email = document.getElementById("email");
 const senha = document.getElementById("senha");
 
 form.addEventListener("submit", (e) => {
-    e.preventDefault();
+    e.preventDefault(); 
     if (checarCampos()) {
         setTimeout(() => {
-            window.location = "quiz.html";
-        }, 3000);
+            window.location = "index.html"; 
+        }, 1000);
     }
 });
 
